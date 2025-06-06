@@ -1,38 +1,55 @@
-header {
-    background-color: #d63384; /* rosa vibrante */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre o Projeto</title>
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <!-- Ícones do Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sobre o Projeto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+<br>
+    <main class="sobre-projeto">
+        <section class="intro">
+            <h2>Como funciona o projeto?</h2>
+            <p>Nosso projeto é uma atividade prática voltada para o uso de HTML, CSS, GitHub e organização de pastas, com uma proposta educativa e colaborativa.</p>
+        </section>
 
-.intro {
-    text-align: center;
-    margin-bottom: 40px;
-}
+        <section class="etapas">
+            <div class="etapa">
+                <span class="material-icons">lightbulb</span>
+                <h3>Planejamento</h3>
+                <p>Começamos definindo o objetivo do projeto, com um tema visual agradável e estrutura organizada.</p>
+            </div>
 
-.etapas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
+            <div class="etapa">
+                <span class="material-icons">code</span>
+                <h3>Desenvolvimento</h3>
+                <p>Usamos HTML, CSS e JavaScript para criar uma página funcional, bonita e acessível.</p>
+            </div>
 
-.etapa {
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
+            <div class="etapa">
+                <span class="material-icons">hub</span>
+                <h3>Versionamento</h3>
+                <p>Aplicamos Git e GitHub para controle de versões e trabalho em equipe.</p>
+            </div>
 
-.etapa:hover {
-    transform: scale(1.05);
-}
-
-.etapa img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-}
+            <div class="etapa">
+                <span class="material-icons">check_circle</span>
+                <h3>Finalização</h3>
+                <p>Testamos, ajustamos o visual, publicamos no GitHub e preparamos para apresentar</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
