@@ -26,8 +26,25 @@ navLinks.forEach(link => {
     });
 });
 
-// Alerta de boas-vindas
-setTimeout(() => {
-    alert('Seja bem-vinde ao nosso projeto rosa super estiloso! 🌸');
-}, 500);
 
+// -----------------------------
+// Funcionalidade para página de contato
+// -----------------------------
+
+// Só executa se o formulário de contato existir
+const formContato = document.querySelector('form');
+
+if (formContato) {
+    formContato.addEventListener('submit', (e) => {
+        const nome = document.querySelector('#nome').value.trim();
+        const email = document.querySelector('#email').value.trim();
+        const mensagem = document.querySelector('#mensagem').value.trim();
+
+        if (!nome || !email || !mensagem) {
+            e.preventDefault(); // impede o envio
+            alert('Por favor, preencha todos os campos antes de enviar. 💬');
+        } else {
+            alert('Mensagem enviada com sucesso! ✨');
+        }
+    });
+}
