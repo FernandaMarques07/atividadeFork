@@ -1,42 +1,100 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #ffe6f0; /* rosa bem clarinho para o fundo */
+    box-sizing: border-box;
 }
 
+/* Header */
 header {
-    background-color: #d63384; /* rosa vibrante */
+    background-color: #d63384;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
+/* Título no header */
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Navbar */
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+nav ul li a:hover {
+    background-color: white;
+    color: #d63384;
+}
+
+/* Main container */
 main {
+    max-width: 900px;
+    margin: 40px auto;
     padding: 20px;
+    background-color: #fff; /* fundo branco */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-footer {
-    background-color: #c2185b; /* tom de rosa mais escuro */
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Cada seção com espaçamento interno e separação */
+main section {
+    background-color: #fafafa; /* fundo suave para cada bloco */
+    padding: 25px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+main section:hover {
+    box-shadow: 0 5px 20px rgba(214, 51, 132, 0.3); /* rosa leve no hover */
+}
+
+/* Títulos com destaque */
+main section h2 {
+    margin-bottom: 20px;
+    color: #d63384;
+    font-size: 26px;
+    border-bottom: 2px solid #d63384;
+    padding-bottom: 8px;
+}
+
+/* Parágrafos */
+main section p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Listas */
+main section ul {
+    list-style: disc inside;
+    padding-left: 15px;
+    color: #555;
+    font-size: 18px;
+}
+
+/* Itens da lista */
+main section ul li {
+    margin-bottom: 10px;
 }
