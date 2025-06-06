@@ -1,0 +1,38 @@
+header {
+    background-color: #d63384; /* rosa vibrante */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.etapas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.etapa {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.etapa:hover {
+    transform: scale(1.05);
+}
+
+.etapa img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
