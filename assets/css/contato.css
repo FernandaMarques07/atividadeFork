@@ -1,3 +1,12 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* rosa claro de fundo */
+
+}
+
+
 /* Reset básico */
 * {
     margin: 0;
@@ -5,20 +14,44 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fce4ec; /* rosa claro de fundo */
-    padding: 30px;
-}
-
 /* Header */
 header {
-    background-color: #d63384; /* rosa vibrante */
+    background-color: #d63384;
     color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Título no header */
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #d63384;
 }
 
 /* Container principal */
@@ -35,8 +68,15 @@ header {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
     color: #d63384;
 }
+
 
 /* Formulário */
 form {
